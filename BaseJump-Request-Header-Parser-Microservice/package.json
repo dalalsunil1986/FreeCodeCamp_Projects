@@ -1,0 +1,15 @@
+{
+  "name": "ikismail-header-parser-microservice",
+  "version": "1.0.0",
+  "description": "A Simple parser of header from node apps",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ikismail",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.1"
+  }
+}

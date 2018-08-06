@@ -1,0 +1,16 @@
+{
+  "name": "file-metadata-microservice",
+  "version": "1.0.0",
+  "description": "A Simple folder-metadata-microservice to view the size of the uploaded file",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ikismail",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.1",
+    "multer": "^1.3.0"
+  }
+}

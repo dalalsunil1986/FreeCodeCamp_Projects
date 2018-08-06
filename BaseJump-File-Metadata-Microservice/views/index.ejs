@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FreeCodeCamp - File Metadata Microservice</title>
+  <meta name="description" content="FreeCodeCamp - File Metadata Microservice">
+  <link id="favicon" rel="icon" href="https://i.imgur.com/SU1XuUA.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+#multipart{
+  padding: 20px;
+}
+
+  #multipart input,
+  #multipart button{
+    display: inline;
+    vertical-align: top;
+    margin-right: 30px;
+  }
+
+</style>
+
+</head>
+<body class="container">
+  <div class="jumbotron">
+    <div class="container text-center">
+      <div class="well well-lg">
+        <h2><strong>BaseJump: File Metadata Microservice</strong></h2>
+        <h3>FreeCodeCamp</h3>
+      </div>
+      <div class="page-header" style="margin : 20px 0 20px">
+        <h5><b>Usage:</b></h5>
+        <form class="form-inline" action="/uploadfiles" method="post" enctype="multipart/form-data" id="multipart" >
+          <input type="file" name="file" id="file" class="form-control mb-2 mr-sm-2 mb-sm-0"/>
+          <button type="submit" name="submit" value="Submit" class="btn btn-danger">Submit</button>
+        </form>
+      </div>
+      <div class="page-header" style="margin : 20px 0 20px">
+        <% if(fileInfo.filename != "freecodecamp_logo_sample.png" || fileInfo.size != 12705) {%>
+          <h5><b>Output:</b></h5>
+        <% } else {%>
+          <h5><b>Sample Output:</b></h5>
+        <% } %>
+        <p><code>{"filename" : "<%= fileInfo.filename %>", "filetype" : "<%= fileInfo.filetype %>", "size" : "<%= fileInfo.size %>"}</code></p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="page-header">
+      <h3>User Stories: </h3>
+    </div>
+    <blockquote>
+      <ul>
+        <li><h4>I can submit a FormData object that includes a file upload.</h4>
+        </li>
+        <li><h4>When I submit something, I will receive the file size in bytes within the JSON response</h4>
+        </li>
+      </ul>
+    </blockquote>
+  </div>
+
+  <footer class="container-fluid footer">
+    <p>Developed by: <strong>Mohammed Ismail</strong>
+    </p>
+    <div style="float:right">
+      <a href="mailto:ikismail7@gmail.com" style="margin-right:10px">
+        <i class="fa fa-envelope-open" aria-hidden="true" style="font-size:20px"></i>
+      </a>
+      <a href="https://github.com/ikismail" target="_blank" style="margin-right:10px">
+        <i class="fa fa-github" aria-hidden="true" style="font-size:20px"></i>
+      </a>
+      <a href="https://www.freecodecamp.org/ikismail" target="_blank" style="margin-right:10px">
+        <i class="fa fa-free-code-camp" aria-hidden="true" style="font-size:20px"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

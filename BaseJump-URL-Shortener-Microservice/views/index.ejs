@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FreeCodeCamp - Timestamp-Microservice</title>
+  <meta name="description" content="A cool thing made with Glitch">
+  <link id="favicon" rel="icon" href="https://i.imgur.com/SU1XuUA.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="container">
+  <div class="jumbotron" style="margin-bottom:0px">
+    <div class="container text-center">
+      <div class="well well-lg">
+        <h2><strong>BaseJump: URL Shortener Microservice</strong></h2>
+        <h3>FreeCodeCamp</h3>
+      </div>
+      <div class="page-header" style="margin : 20px 0 20px">
+         <h5>Sample Creation: </h5>
+         <p><code>https://ikismail-shorturl-microservice.glitch.me/create/https://codepen.io</code></p>
+       </div>
+       <div class="page-header" style="margin : 20px 0 20px">
+         <h5>Sample Output: </h5>
+         <p><code>{"original_url":"https://codepen.io","short_url":"https://ikismail-shorturl-microservice.glitch.me/HJDZSBM2-"}</code></p>
+       </div>
+       <div class="page-header" style="margin : 20px 0 20px">
+         <h5>Usage: </h5>
+         <table class="table table-bordered">
+            <thead>
+              <th class="text-center">Usage</th>
+              <th class="text-center">Redirect to</th>
+            </thead>
+            <tbody style="font-size:large">
+              <tr>
+                <td><code>https://ikismail-shorturl-microservice.glitch.me/HJDZSBM2-</code></td>
+                <td><code>https://codepen.io</code></td>
+              </tr>
+            </tbody>
+         </table>
+       </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="page-header">
+      <h3>User Stories: </h3>
+    </div>
+    <blockquote>
+      <ul>
+        <li><h4>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</h4>
+        </li>
+        <li><h4> If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</h4>
+        </li>
+        <li><h4>When I visit that shortened URL, it will redirect me to my original link.</h4>
+        </li>
+      </ul>
+    </blockquote>
+  </div>
+  <br><br><br>
+  <footer class="container-fluid footer">
+    <p>Developed by: <strong>Mohammed Ismail</strong>
+    </p>
+    <div style="float:right">
+      <a href="mailto:ikismail7@gmail.com" style="margin-right:10px">
+        <i class="fa fa-envelope-open" aria-hidden="true" style="font-size:20px"></i>
+      </a>
+      <a href="https://github.com/ikismail" target="_blank" style="margin-right:10px">
+        <i class="fa fa-github" aria-hidden="true" style="font-size:20px"></i>
+      </a>
+      <a href="https://www.freecodecamp.org/ikismail" target="_blank" style="margin-right:10px">
+        <i class="fa fa-free-code-camp" aria-hidden="true" style="font-size:20px"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>

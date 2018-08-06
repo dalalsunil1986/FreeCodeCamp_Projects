@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FreeCodeCamp - Timestamp Microservice </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+  }
+  .footer p, .footer div {
+    display: inline;
+    vertical-align: top;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .footer p {
+    font-weight: bold;
+  }
+  </style>
+</head>
+
+<body class="container">
+  <div class="jumbotron">
+    <div class="container text-center">
+      <div class="well well-lg">
+        <h2><strong>BaseJump: Timestamp Microservice</strong></h2>
+        <h3>FreeCodeCamp</h3>
+      </div>
+      <div class="page-header" style="margin : 20px 0 20px">
+        <h5>Example Usge: </h5>
+        <p><kbd>https://ikismail-timestamp.glitch.me/June%2027,%202017</kbd></p>
+        <p><kbd>https://ikismail-timestamp.glitch.me/1498521600</kbd></p>
+      </div>
+      <div class="page-header" style="margin : 20px 0 20px">
+        <h5>Example Output: </h5>
+        <p><code>{ "unix": 1450137600, "natural": "June 27, 2017" }</code></p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="page-header">
+      <h3>User Stories: </h3>
+    </div>
+    <blockquote>
+      <ul>
+        <li><h4>I can pass a string as a parameter,
+          and it will check to see whether that string contains
+          either a unix timestamp or a natural language date
+          (example: January 1, 2016).</h4>
+        </li>
+        <li><h4>If it does, it returns both the Unix timestamp and
+          the natural language form of that date.</h4>
+        </li>
+        <li><h4>If it does not contain a date or Unix timestamp, it
+          returns null for those properties.</h4>
+        </li>
+      </ul>
+    </blockquote>
+  </div>
+
+  <footer class="container-fluid footer">
+    <p>Developed by: <strong>Mohammed Ismail</strong>
+    </p>
+    <div style="float:right">
+      <a href="mailto:ikismail7@gmail.com" style="margin-right:10px"><i class="fa fa-envelope-open" aria-hidden="true" style="font-size:20px"></i></a>
+      <a href="https://github.com/ikismail" target="_blank" style="margin-right:10px"><i class="fa fa-github" aria-hidden="true" style="font-size:20px"></i></a>
+      <a href="https://www.freecodecamp.org/ikismail" target="_blank" style="margin-right:10px"><i class="fa fa-free-code-camp" aria-hidden="true" style="font-size:20px"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
